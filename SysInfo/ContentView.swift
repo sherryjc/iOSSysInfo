@@ -10,17 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var lanInfoView = LANInfoView(lanInfo: lanInfo)
-    var lanInfoText = Text("LAN Info")
+    let lanInfoView = LANInfoView(lanInfo: lanInfo)
+    let wifiInfoView = WifiInfoView()
     var body: some View {
         VStack {
-            Text("System Info")
             NavigationView {
-                HStack {
+                List {
                     NavigationLink(destination: lanInfoView) {
                         Text("Lan Info")
-                    }.navigationBarTitle("Navigation")
-                }
+                            .foregroundColor(Color.blue)
+                    }
+                    NavigationLink(destination: wifiInfoView){
+                        Text("Wifi Info")
+                            .foregroundColor(Color.blue)
+                    }
+                    }.navigationBarTitle("System Info")
             }
         }
     }

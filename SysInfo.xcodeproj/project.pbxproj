@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EC0A290240836DA00E96CFD /* WifiInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC0A28F240836DA00E96CFD /* WifiInfoView.swift */; };
 		D8458DB92406F44E00174FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8458DB82406F44E00174FBB /* AppDelegate.swift */; };
 		D8458DBB2406F44E00174FBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8458DBA2406F44E00174FBB /* SceneDelegate.swift */; };
 		D8458DBD2406F44E00174FBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8458DBC2406F44E00174FBB /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EC0A28F240836DA00E96CFD /* WifiInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInfoView.swift; sourceTree = "<group>"; };
 		D8458DB52406F44E00174FBB /* SysInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8458DB82406F44E00174FBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8458DBA2406F44E00174FBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D8458DBA2406F44E00174FBB /* SceneDelegate.swift */,
 				D8458DBC2406F44E00174FBB /* ContentView.swift */,
 				D8458DCC2406FA9D00174FBB /* LANInfoView.swift */,
+				2EC0A28F240836DA00E96CFD /* WifiInfoView.swift */,
 				D8458DBE2406F44F00174FBB /* Assets.xcassets */,
 				D8458DC32406F44F00174FBB /* LaunchScreen.storyboard */,
 				D8458DC62406F44F00174FBB /* Info.plist */,
@@ -179,6 +182,7 @@
 				D8458DD324072EE600174FBB /* DataIO.swift in Sources */,
 				D8458DCF2407007300174FBB /* LANInfo.swift in Sources */,
 				D8458DBB2406F44E00174FBB /* SceneDelegate.swift in Sources */,
+				2EC0A290240836DA00E96CFD /* WifiInfoView.swift in Sources */,
 				D8458DCD2406FA9D00174FBB /* LANInfoView.swift in Sources */,
 				D8458DBD2406F44E00174FBB /* ContentView.swift in Sources */,
 			);

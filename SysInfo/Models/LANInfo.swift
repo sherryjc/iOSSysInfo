@@ -14,12 +14,11 @@ struct IpV4Addr: Hashable, Codable {
     var ip2: UInt8
     var ip3: UInt8
     fileprivate var ipStr: String
-    Init() {
-        ipStr = "\(ip0).\(ip1).\(ip2).\(ip3)"
-    }
-    func AsString() {
+    
+    func AsString() -> String {
         return ipStr
     }
+    
 }
 
 struct LANNode: Hashable, Codable {
@@ -34,7 +33,7 @@ struct LANInfo: Hashable, Codable {
     var subnetMask: IpV4Addr;
     var router: IpV4Addr;
     static func == (lhs: LANInfo, rhs: LANInfo) -> Bool {
-        return false
+        return lhs.name == rhs.name
     }
 
     //fileprivate var visibleNodes: [LANNode];
