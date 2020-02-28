@@ -8,7 +8,9 @@
 
 import Foundation
 
-let lanInfo : LANInfo = load("lanInfo.json")
+let lanInfoTestData : LANInfo = load("lanInfo.json")
+
+let lanInfo = lanInfoTestData
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

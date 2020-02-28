@@ -21,6 +21,11 @@ struct IpV4Addr: Hashable, Codable {
     
 }
 
+struct IpAddr {
+    var addr: String
+    var family: Int8
+}
+
 struct LANNode: Hashable, Codable {
     var ipAddr: IpV4Addr
     var name: String
@@ -37,5 +42,11 @@ struct LANInfo: Hashable, Codable {
     }
 
     //fileprivate var visibleNodes: [LANNode];
-    
 }
+
+struct NetworkIfcInfo {
+    var name: String
+    var ipAddr: String
+    var family: Int8
+}
+// socketaddr: ifa_addr, ifa_netmask, ifa_dstaddr
